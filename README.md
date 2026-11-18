@@ -4,6 +4,8 @@ An academic Streamlit application that maps natural-language prompts to one of 1
 
 **BigGAN is class-conditional image generation, not unrestricted text-to-image generation.** The generator receives an ImageNet class ID and latent noise; it does not follow arbitrary prompt details such as attributes, backgrounds, poses, or multiple objects. Groq maps a prompt to a supported class but does not change this limitation.
 
+Try the app here: https://class-conditional-image-studio-hc6pztkn42kuutvbbpquwb.streamlit.app/
+
 ## Features
 
 - Groq prompt-to-ImageNet-class mapping, with local keyword and manual-class fallbacks.

@@ -76,4 +76,4 @@ Prompts are screened before generation. Screening fails closed when inference or
 - ImageNet: its terms and dataset restrictions must be reviewed separately for derivative use.
 - Groq service: verify current Groq terms and model usage terms for the configured model.
 
-No license or royalty status is asserted beyond the official sources. These items require manual verification before public deployment.
+No license or royalty status is asserted beyond the official sources.

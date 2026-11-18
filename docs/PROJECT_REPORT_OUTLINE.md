@@ -198,8 +198,6 @@ The benchmark loaded multiple model components in one process. The peak RSS is a
 - The exact BigGAN, safety, CLIP, dataset, and Groq license terms remain to be verified.
 - Live public-hosted memory, cold-start time, API rate limits, and long-term availability were not measured in the repository.
 
-## 11. Conclusion and Remaining Work
+## 11. Conclusion
 
 The project implements a complete local academic pipeline: prompt safety screening, Groq or fallback prompt-to-class mapping, validated ImageNet conditioning, CPU BigGAN synthesis, a 5 x 3 truncation grid, and optional CLIP evaluation. The implementation and benchmark infrastructure are present, and the measured output and failure behavior are documented.
-
-Remaining work is to complete a live end-to-end Groq test, perform a Streamlit Community Cloud smoke test, verify official checkpoint and dataset licenses, confirm public service terms, and conduct a final demonstration run with the documented hardware and software environment.

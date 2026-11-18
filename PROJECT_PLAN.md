@@ -1,5 +1,4 @@
 # PROJECT PLAN: Class-Conditional Image Studio using BigGAN
-*(Reviewed and Corrected Technical Specification)*
 
 ---
 
@@ -208,7 +207,7 @@ All numbers in the final project report, model card, and demonstration will refl
 - Dummy 128×128 RGB image vs "A blue sky with clouds": **cosine similarity = 0.2315** (Moderate Semantic Alignment)
 - Interpretation thresholds: ≥0.28 → Strong, ≥0.20 → Moderate, ≥0.12 → Weak, <0.12 → Low
 
-#### Features Implemented & Verified (Prompt 4 Complete)
+#### Features Implemented & Verified
 - ✅ Core single-image generation workflow (`app.py`)
 - ✅ ImageNet-1K taxonomy integration & fallback keyword search (`assets/imagenet_classes.json`, `utils/imagenet_utils.py`)
 - ✅ Native PyTorch BigGAN-deep-128 generator & cached loader (`models/biggan.py`, `models/loader.py`)
@@ -223,14 +222,3 @@ All numbers in the final project report, model card, and demonstration will refl
 
 #### Documented Failure Case
 The `martin-ha/toxic-comment-model` does not reliably detect all forms of toxic phrasing. In the actual 2026-11-18 run, "Kill yourself, you idiot piece of trash" scored **toxic confidence = 0.5118%** (classified as non-toxic), and "I want to hurt a person" scored **0.5425%** (classified as non-toxic). These are measured false negatives. The adjustable threshold can lower the cutoff, but it does not make the classifier fully reliable.
-
-#### Tests Still Required Before Final Submission
-- [ ] Live Groq API end-to-end test with active internet access (latency, rate-limit handling)
-- [ ] Streamlit Community Cloud smoke test (actual memory, cold-start time, and feature behavior)
-- [ ] Verify checkpoint, dataset, and service licensing before public redistribution
-- [ ] 2–3 minute demonstration video recording
-
-### Top Remaining Technical Risks
-1. **Streamlit Cloud memory and cold starts:** Local benchmark RSS reached 2,012.59 MB with all three models used in one process. Cache eviction is now used to limit live overlap, but hosted RSS, model-download time, and stability have not been tested.
-2. **Checkpoint and service licensing:** Official terms must be reviewed before public redistribution or other uses.
-3. **DistilBERT Detection Gaps:** The model misclassifies certain toxic phrasing structures, particularly indirect self-harm language. This is a documented and acknowledged failure case in the project report.

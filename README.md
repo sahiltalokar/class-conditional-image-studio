@@ -124,15 +124,3 @@ The measured local peak was about 2.0 GB before the model lifecycle changes. Seq
 - Groq: review current service and configured-model terms.
 
 The project does not independently assert or grant licenses for these checkpoints or datasets. Verify each official model card, checkpoint license, and service term before public release. Further technical and responsible-AI details are in [docs/MODEL_CARD.md](docs/MODEL_CARD.md), [docs/EVALUATION.md](docs/EVALUATION.md), and [PROJECT_PLAN.md](PROJECT_PLAN.md).
-
-## Screenshots
-
-Add verified application screenshots here after a local or hosted smoke test:
-
-- Single Image Studio prompt and output.
-- 5 × 3 truncation comparison grid.
-- Safety-screening result.
-- On-demand CLIP evaluation.
-- Manual ImageNet class selection.
-
-Do not present fabricated or undisclosed generated images as application screenshots.

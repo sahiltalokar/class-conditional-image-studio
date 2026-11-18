@@ -1,0 +1,42 @@
+
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Downloaded model weights and large binaries
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+weights/
+cache/
+hf_cache/
+checkpoints/
+
+# Temporary files and generated outputs
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+generated/
+outputs/
+scratch/
+assets/test_outputs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

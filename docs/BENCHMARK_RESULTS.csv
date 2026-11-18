@@ -1,0 +1,19 @@
+metric,value,unit,status,details,measured_at
+hardware.cpu,"AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",string,measured,platform.processor(),2026-11-18T13:54:44.268117+00:00
+hardware.ram,15.86,GB,measured,psutil.virtual_memory().total,2026-11-18T13:54:44.268117+00:00
+software.os,Windows-11-10.0.26200-SP0,string,measured,platform.platform(),2026-11-18T13:54:44.268117+00:00
+software.python,3.12.1,string,measured,platform.python_version(),2026-11-18T13:54:44.268117+00:00
+software.torch,2.7.1+cpu,string,measured,torch.__version__,2026-11-18T13:54:44.268117+00:00
+software.transformers,4.53.0,string,measured,transformers.__version__,2026-11-18T13:54:44.268117+00:00
+compute.device,cpu,string,measured,torch.cuda.is_available(),2026-11-18T13:54:44.268117+00:00
+biggan_cold_start_loading_time,1.350929,seconds,measured,Existing load_biggan_model(); fresh process,2026-11-18T13:54:44.268117+00:00
+biggan_loaded_peak_rss,1028.34,MB,measured,Peak/resident process RSS after BigGAN loading,2026-11-18T13:54:44.268117+00:00
+single_image_generation_time,0.190796,seconds,measured,Existing forward pass and PIL conversion path; seed 42,2026-11-18T13:54:44.268117+00:00
+average_generation_time,0.189732,seconds,measured,"Mean of seeds 42, 43, 44",2026-11-18T13:54:44.268117+00:00
+15_image_comparison_grid_execution_time,10.484235,seconds,measured,Existing run_comparison_grid(); successful images=15,2026-11-18T13:54:44.268117+00:00
+groq_class_mapping_latency,1.086654,seconds,measured,success=True; model=openai/gpt-oss-20b; error=none,2026-11-18T13:54:44.268117+00:00
+distilbert_inference_latency,0.029242,seconds,measured,toxic_score=0.007195143029093742; error=None,2026-11-18T13:54:44.268117+00:00
+clip_evaluation_latency,3.438937,seconds,measured,similarity=0.2641275227069855; error=None,2026-11-18T13:54:44.268117+00:00
+peak_process_rss,2012.59,MB,measured,Resident process RSS at end of benchmark,2026-11-18T13:54:44.268117+00:00
+benchmark.measurement_timestamp_utc,2026-11-18T13:54:44.268117+00:00,string,measured,Run timestamp,2026-11-18T13:54:44.268117+00:00
+benchmark.process_peak_rss_initial,609.15,MB,measured,Resident process RSS before model loading,2026-11-18T13:54:44.268117+00:00
